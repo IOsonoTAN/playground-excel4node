@@ -1,6 +1,6 @@
-const exel = require('excel4node')
+const excel = require('excel4node')
 
-const workbook = new exel.Workbook()
+const workbook = new excel.Workbook()
 const reportOrder = workbook.addWorksheet('Report Order')
 
 const numberFormat = {
@@ -89,7 +89,7 @@ const datas = {
 }
 
 /**
- * Set Headers
+ * Set headers
  */
 reportOrder.row(1).setHeight(20)
 reportOrder.row(2).setHeight(30)
